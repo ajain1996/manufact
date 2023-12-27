@@ -19,14 +19,31 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const settings = [
-    { name: 'Business Details' },
-    { name: 'User Management' },
-    { name: 'Tax Information' },
-    { name: 'Type and Services' },
-    { name: 'Admin details' },
-    { name: 'Add Products' },
-    { name: 'Product List' },
-    { name: 'RFQ Income' },
+    {
+        name: "Dashboards",
+        nav: "/",
+        image: "/svg/dashboard-user.svg"
+    },
+    {
+        name: "Products",
+        nav: "/orders",
+        image: "/svg/Twiter.svg"
+    },
+    {
+        name: "Smart Seals",
+        nav: "/",
+        image: "/images/b3.png"
+    },
+    {
+        name: "Users",
+        nav: "/",
+        image: "/svg/woman.svg"
+    },
+    {
+        name: "Admin",
+        nav: "/",
+        image: "/svg/userProfile.svg"
+    },
 ];
 
 const menus = [
@@ -154,15 +171,6 @@ export default function Navbar({ setShowNotifications, showNotifications }) {
                             </MenuItem>
                             <MenuItem onClick={handleCloseUserMenu}>
                                 <a href="/dashboard/adminDetail" style={menuItems}>{settings[4]?.name}</a>
-                            </MenuItem>
-                            <MenuItem onClick={handleCloseUserMenu}>
-                                <a href="/dashboard/addProduct" style={menuItems}>{settings[5]?.name}</a>
-                            </MenuItem>
-                            <MenuItem onClick={handleCloseUserMenu}>
-                                <a href="/dashboard/addProduct" style={menuItems}>{settings[6]?.name}</a>
-                            </MenuItem>
-                            <MenuItem onClick={handleCloseUserMenu}>
-                                <a href="/dashboard/rfqIncome" style={menuItems}>{settings[7]?.name}</a>
                             </MenuItem>
                         </Menu>
                     </Box>

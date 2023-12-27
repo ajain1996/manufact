@@ -1,8 +1,13 @@
+$small: 300px;
+$medium: 900px;
+
 .sidebar {
     flex: 1;
     border-right: 0.5px solid rgb(230, 227, 227);
     min-height: 100vh;
     background-color: white;
+    width: 300px;
+    padding-right: 20px;
   
     .top {
       height: 50px;
@@ -21,6 +26,10 @@
       width: 18px;
       height: 18px; 
       border-radius: 20px
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 0;
     }
   
     hr {
@@ -94,4 +103,20 @@
         }
     }
   }
+
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    //css code
+    .sidebar {
+      width: 0 !important;
+      display: none;
+    }
+
+    .dashboard-item {
+      width: 0 !important;
+    }
+}
+
+  // @media (min-width: 320px) and (max-width: 480px) {
+    
+  // }
   

@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./sidebar.scss";
 import Link from "next/link";
 import { useState } from "react";
+import { makeStyles } from "@material-ui/core";
 
 const DashboardList = [
     {
@@ -35,7 +36,7 @@ const Sidebar = () => {
     const [selectedText, setSelectedText] = useState(0);
 
     return (
-        <div className="sidebar pr-5" style={{ backgroundColor: "#fff", width: "260px" }}>
+        <div className={`sidebar`}>
             <div className="top mt-3">
                 <Link href="/" className="text-black text-decoration-none">
                     <h4 style={{ fontWeight: "bold", marginLeft: "-64px" }}>Manufact</h4>
