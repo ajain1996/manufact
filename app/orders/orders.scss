@@ -1,0 +1,52 @@
+.home {
+    display: flex;
+  
+    .homeContainer {
+      flex: 6;
+    }
+  }
+  
+  .table {
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+  
+      .image {
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        margin-left: 10px;
+        object-fit: cover;
+      }
+
+      .cellName {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        margin-left: 8px;
+      }
+    }
+
+    .cellCustomer {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      margin-left: 8px;
+    }
+
+    .cellCustomerEmail {
+      font-size: 11px;
+      font-weight: 500;
+      color: #667085;
+      margin-left: 8px;
+    }
+
+    .cellDate {
+      font-size: 14px;
+      font-weight: 500;
+      color: #667085,
+    }
+  }
+  .custom-header-cell {
+    font-size: 20px;
+  }

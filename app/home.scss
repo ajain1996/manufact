@@ -1,0 +1,64 @@
+.home {
+    display: flex;
+  
+    .homeContainer {
+      flex: 6;
+
+      .welcomeText {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .subWelcomeText {
+        color: #7C8DB5;
+      }
+
+      .deliveryText {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        margin-right: 8px;
+      }
+
+      .switch {
+        width: 46px;
+        height: 26px;
+        background-color: #000;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .switch-circle {
+        width: 18px;
+        height: 18px;
+        background-color: #ED1C24;
+        border-radius: 100px;
+        margin-top: 4px;
+        margin-left: 4px;
+        margin-right: 4px;
+        cursor: pointer;
+      }
+  
+      .widgets,
+      .charts {
+        display: flex;
+        gap: 20px;
+        padding: 5px 20px;
+      }
+  
+      .listContainer {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+  
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  
